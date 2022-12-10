@@ -6,13 +6,13 @@ public class Main {
             return "Invoking method from class A";
         }
     }
-public static class B extends A{
+    public static class B extends A{
         public String hh(){
             return "Method is overridden in Extendend class B";
         }
 }
-public static void main(String [] args){
-        B b=new B();
+    public static void main(String [] args){
+        A b=new B();
         b.hh();
 }
   
